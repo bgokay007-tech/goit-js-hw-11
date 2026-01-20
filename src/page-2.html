@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,28 @@
         <load src="./partials/back-link.html" />
       </div>
     </main>
+    <div class="search-container">
+      <form
+        id="searchForm"
+        class="search-form"
+        role="search"
+        aria-label="Image search"
+      >
+        <label for="query" class="visually-hidden"></label>
+        <input
+          type="text"
+          id="query"
+          name="query"
+          placeholder="search images…"
+          autocomplete="off"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div id="loader" class="hidden"></div>
+    <ul class="gallery"></ul>
 
     <load src="./partials/footer.html" />
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
